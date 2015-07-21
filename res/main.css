@@ -1,0 +1,133 @@
+/* Made by Ramon Meffert (@ramonmeffert) for playbylyrics.com
+ * Customized by lucb1e
+ */
+
+.light {
+	color: #999;
+	font-size: 12pt;
+}
+
+.text {
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #19404a;
+}
+
+a {
+	color: #19404a;
+}
+
+img {
+	border: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin-left: 40px;
+}
+
+body {
+	background-color: #FEFEFE;
+}
+
+#container {
+	width: 700px;
+	margin: 10% auto 0 auto;
+	background-color: #67A5B2;
+	height: 99%;
+	padding: 5px 0 0 0;
+	box-shadow: 0 5px 10px -5px #1f5765;
+}
+
+#header {
+	width: 600px;
+	height: 104px;
+	margin: 0 50px;
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+
+.searchBlock {
+	height: 29px;
+	display: block;
+}
+
+#content {
+	width: 600px;
+	margin: 5px 50px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#content p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	color: #fefefe;
+	width: 600px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 5px 0;
+	background: #654f3b;
+}
+
+#content input[type="text"] {
+	width: 89%;
+	border: 0;
+	height: 25px;
+	float: left;
+	padding: 1px;
+	margin-bottom: 4px;
+	box-sizing: border-box;
+}
+
+#content input[type="text"]:focus {
+	outline: 0;
+	box-shadow: 0 0 5px #1f5765;
+}
+
+#content input[type="submit"] {
+	width: 9%;
+	-webkit-appearance: none;
+	border: 0;
+	background: #654f3b;
+	color: #fefefe;
+	height: 25px;
+	float: right;
+}
+
+#footer {
+	color: #a29588;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	padding: 15px 0;
+}
+
+#footer a {
+	color: #a29588;
+	text-decoration: none;
+}
+
+#footer .footerlinks {
+	font-weight: bold;
+}
+
+#footer .footerlinks a:after {
+	content: " -";
+}
+
+#footer .footerlinks a:last-of-type:after {
+	content: "";
+}
+
+#feedback-submit {
+	width: 200px !important;
+	float: none !important;
+	margin-left: 302px !important;
+}

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Play By Lyrics</title>
+		<link rel="stylesheet" href="res/style.css" type="text/css" />
+		<meta charset="utf-8" />
+	</head>
+	<body id="body">
+		<div id="container">
+			<header id="header">
+				 <img src="res/logo.png" alt="PlayByLyrics logo"/> 
+			</header>
+			<section id="content">
+				<form method="get" onsubmit="doSubmit();">
+					<input type="text" name="lyrics" id="lyrics" placeholder="Lyrics"/>
+					<input type="submit" name="" id="submit" value="Play!"/>
+				</form>
+				<p>For best results, combine the lyrics with the artist or the song title.</p>
+				<script>
+					document.getElementById("lyrics").focus();
+					window.addEventListener('pageshow', pageShow, false);
+					subm = document.getElementById("doSubmit");
+					function pageShow(ev) {
+						subm.disabled = "";
+						subm.value = "Play!";
+					}
+					function doSubmit() {
+						subm.value = "Fetching...";
+						subm.disabled = "disabled";
+					}
+				</script>
+			</section>
+		</div>
+		<footer id="footer">
+			Copyright &copy; 2012 <a href="http://playbylyrics.com">PlayByLyrics.com</a>
+			<div id="footerlinks">
+				<a href="http://playbylyrics.com/about.htm">About</a>
+				<a href="http://playbylyrics.com/terms.htm">Legal &amp; privacy</a>
+				<a href="http://playbylyrics.com/feedback.php">Feedback</a>
+			</div>
+		</footer> 
+	</body>
+</html>

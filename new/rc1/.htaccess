@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(about|feedback|feedbacksent|terms)\.?(php|htm)?$ index.php?page=$1&$2

@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(about|feedback|feedback-has-been-sent|terms)\.?(php|htm)?$ index.php?page=$1&$2
+RewriteCond %{HTTP_HOST} lucb1e.com$
+RewriteCond %{REQUEST_URI} ^/domains/
+RewriteRule ^.*$ denied
